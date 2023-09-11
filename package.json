@@ -2,9 +2,9 @@
   "name": "setup-mongodb-db",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "dev": "nodemon server-files/app.js",
+    "dev": "nodemon app.js",
+    "seed": "nodemon db/seed/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

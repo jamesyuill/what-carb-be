@@ -1,12 +1,13 @@
 //https://www.youtube.com/watch?v=vjf774RKrLc
 
 const express = require('express');
-const db = require('../db/connection');
+const connectDB = require('./db/connectMongo');
 const app = express();
+const getRoute = require('./routes/dishes');
 
-const getRoute = require('../routes/dishes');
+connectDB();
 
-app.use('/dishes', getRoute);
+app.use('/', getRoute);
 
 const port = process.env.PORT || 8080;
 
