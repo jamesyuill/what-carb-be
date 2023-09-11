@@ -28,3 +28,22 @@ exports.addDish = async (newDish) => {
     return next(error);
   }
 };
+
+exports.removeDishById = async (id) => {
+  try {
+    const result = await Dish.findByIdAndDelete({ _id: id });
+
+    return result;
+  } catch (error) {
+    return next(error);
+  }
+};
+
+exports.editDishById = async (id, update) => {
+  try {
+    const result = await Dish.findByIdAndUpdate({ _id: id }, update);
+    return result;
+  } catch (error) {
+    return next(error);
+  }
+};
