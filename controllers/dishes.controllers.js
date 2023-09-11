@@ -1,4 +1,4 @@
-const { selectDishes } = require('../models/dishes.models');
+const { selectDishes, addDish } = require('../models/dishes.models');
 
 exports.getDishes = async (req, res) => {
   const { vegetarian, carbType } = req.query;
@@ -12,5 +12,12 @@ exports.getDishes = async (req, res) => {
 };
 
 exports.postDish = async (req, res) => {
-  console.log(req);
+  const newDish = req.body;
+
+  try {
+    const addedDish = await addDish(newDish);
+    res.status(201).send({ addedDish });
+  } catch (error) {
+    return next(error);
+  }
 };

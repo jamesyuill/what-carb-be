@@ -18,3 +18,13 @@ exports.selectDishes = async (vegetarian, carbType) => {
     }
   }
 };
+
+exports.addDish = async (newDish) => {
+  try {
+    const dishToAdd = new Dish(newDish);
+    const result = await dishToAdd.save();
+    return result;
+  } catch (error) {
+    return next(error);
+  }
+};
