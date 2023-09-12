@@ -2,6 +2,7 @@
   "name": "setup-mongodb-db",
   "version": "1.0.0",
   "description": "",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
     "seed": "nodemon db/seed/seed.js",
