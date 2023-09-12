@@ -16,3 +16,5 @@ app.use('/', getRoute);
 app.all('*', (_, res) => res.status(404).send({ msg: 'Not Found' }));
 
 app.use(handleCustomErrors);
+
+module.exports = app;
