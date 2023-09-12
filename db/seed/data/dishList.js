@@ -1,8 +1,3 @@
-// {title: ,
-// carbType: ,
-// vegetarian: ,
-// ingredients: [],}
-
 const dishes = [
   {
     title: 'Pesto Pasta',
@@ -66,189 +61,247 @@ const dishes = [
     vegetarian: true,
     ingredients: ['Tortilla', 'Avocado', 'Kidney Beans', 'Onion', 'Cheese'],
   },
+  {
+    title: 'Pasta La Mafia',
+    carbType: 'Pasta',
+    vegetarian: false,
+    ingredients: ['Pasta', 'Ham', 'Tomatoes'],
+  },
+  {
+    title: 'Spaghetti & Meatballs',
+    carbType: 'Pasta',
+    vegetarian: false,
+    ingredients: ['Pasta', 'Beef', 'Tomatoes', 'Garlic'],
+  },
+  {
+    title: 'Mushroom Pasta',
+    carbType: 'Pasta',
+    vegetarian: true,
+    ingredients: ['Pasta', 'Mushrooms', 'Cream'],
+  },
+
+  {
+    title: 'Carbonara',
+    carbType: 'Pasta',
+    vegetarian: false,
+    ingredients: ['Pasta', 'Bacon', 'Cream', 'Egg Yolk', 'Peas'],
+  },
+
+  {
+    title: 'Lasagne',
+    carbType: 'Pasta',
+    vegetarian: false,
+    ingredients: ['Pasta', 'Beek Mince', 'Tomato', 'Beschamel', 'Side Salad'],
+  },
+  {
+    title: 'Potato and Cauliflower Curry',
+    carbType: 'Rice',
+    vegetarian: true,
+    ingredients: [
+      'Rice',
+      'Potato',
+      'Onion',
+      'Cauliflower',
+      'Coconut Cream',
+      'Augergine',
+    ],
+  },
+
+  {
+    title: 'Chilli con Carne',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Beef', 'Tomato', 'Kidney Beans', 'Paprika', 'Cumin'],
+  },
+
+  {
+    title: 'Veggie Chilli',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Tomato', 'Kidney Beans', 'Paprika', 'Cumin'],
+  },
+
+  {
+    title: 'Teriyaki Salmon with Rice',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Salmon', 'Green Veg'],
+  },
+  {
+    title: 'Beef Stroganoff',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Beef', 'Cream', 'Green Beans'],
+  },
+  {
+    title: 'Creamy Chicken with Green Beans',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Cream', 'Chicken', 'Green Beans'],
+  },
+  {
+    title: 'Coq Au Vin',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: [
+      'Rice',
+      'Chicken',
+      'Bacon',
+      'Cabbage',
+      'Mushrooms',
+      'Potatoes',
+      'Wine',
+    ],
+  },
+
+  {
+    title: 'Swedish Meatballs',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Beef & Pork Mince', 'Cream', 'Dill'],
+  },
+
+  {
+    title: 'Beef Stir Fry',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: [
+      'Rice',
+      'Beef',
+      'Brocolli',
+      'Mini Corn',
+      'Garlic',
+      'Spring Onion',
+    ],
+  },
+
+  {
+    title: 'Chicken Biryani',
+    carbType: 'Rice',
+    vegetarian: false,
+    ingredients: ['Rice', 'Chicken', 'Spices', 'Onion', 'Yoghurt'],
+  },
+
+  {
+    title: 'Roast Chicken & Potatoes',
+    carbType: 'Potato',
+    vegetarian: false,
+    ingredients: ['Potato', 'Whole Chicken', 'Green Veg'],
+  },
+
+  {
+    title: 'Burger & Chips',
+    carbType: 'Potato',
+    vegetarian: false,
+    ingredients: ['Potato', 'Beef Burger', 'Buns', 'Corn on Cob'],
+  },
+
+  {
+    title: 'Fish & Chips',
+    carbType: 'Potato',
+    vegetarian: false,
+    ingredients: ['Potato', 'Fish', 'Green Veg'],
+  },
+  {
+    title: 'Jacket Potato',
+    carbType: 'Potato',
+    vegetarian: true,
+    ingredients: ['Potato', 'Cheese', 'Salad'],
+  },
+  {
+    title: 'Fish Pie',
+    carbType: 'Potato',
+    vegetarian: false,
+    ingredients: ['Potato', 'Fish', 'Green Veg'],
+  },
+
+  {
+    title: 'One Pot Chicken with Cous Cous',
+    carbType: 'Cous Cous',
+    vegetarian: false,
+    ingredients: ['Cous Cous', 'Chicken', 'Peppers', 'Olives', 'Lemon'],
+  },
+  {
+    title: 'Lamb or Chicken Tagine',
+    carbType: 'Cous Cous',
+    vegetarian: false,
+    ingredients: ['Cous Cous', 'Lamb or Chicken', 'Tomato', 'Onion', 'Garlic'],
+  },
+
+  {
+    title: 'White Fish, Chorizo & White Bean Stew',
+    carbType: 'Cous Cous',
+    vegetarian: false,
+    ingredients: [
+      'Cous Cous',
+      'White Fish',
+      'Chorizo',
+      'Canellini Beans',
+      'Tomato',
+    ],
+  },
+
+  {
+    title: 'Ramen Noodles',
+    carbType: 'Noodles',
+    vegetarian: false,
+    ingredients: ['Noodles', 'Left over meat', 'Green Veg'],
+  },
+
+  {
+    title: 'Stir Fry Chicken & Noodles',
+    carbType: 'Noodles',
+    vegetarian: false,
+    ingredients: ['Noodles', 'Chicken', 'Brocolli', 'Mini Corn'],
+  },
+
+  {
+    title: 'Stir Fry Tofu & Green Veg',
+    carbType: 'Noodles',
+    vegetarian: true,
+    ingredients: ['Noodles', 'Tofu', 'Brocolli', 'Mini Corn', 'Green Beans'],
+  },
+
+  {
+    title: 'Chicken Quesadilla',
+    carbType: 'Tortilla',
+    vegetarian: false,
+    ingredients: ['Tortilla', 'Chicken', 'Cheese', 'Black Beans', 'Sweetcorn'],
+  },
+
+  {
+    title: 'Chicken Wrap',
+    carbType: 'Tortilla',
+    vegetarian: false,
+    ingredients: [
+      'Tortilla',
+      'Chicken',
+      'Cheese',
+      'Avocado',
+      'Sour Cream',
+      'Lettuce',
+    ],
+  },
+  {
+    title: 'Enchilada',
+    carbType: 'Tortilla',
+    vegetarian: false,
+    ingredients: ['Tortilla', 'Beef or Chicken', 'Tomato', 'Onion', 'Pepper'],
+  },
+
+  {
+    title: 'Lamb Kofte',
+    carbType: 'Tortilla',
+    vegetarian: false,
+    ingredients: [
+      'Tortilla',
+      'Lamb mince',
+      'Tomato',
+      'Avocado',
+      'Cucumber',
+      'Hummus',
+    ],
+  },
 ];
-
-//   new Dish('Pasta La Mafia', 'Pasta', false, ['Pasta', 'Ham', 'Tomatoes']),
-//   new Dish('Spaghetti & Meatballs', 'Pasta', false, [
-//     'Pasta',
-//     'Beef',
-//     'Tomatoes',
-//     'Garlic',
-//   ]),
-//   new Dish('Mushroom Pasta', 'Pasta', true, ['Pasta', 'Mushrooms', 'Cream']),
-//   new Dish('Carbonara', 'Pasta', false, [
-//     'Pasta',
-//     'Bacon',
-//     'Cream',
-//     'Egg Yolk',
-//     'Peas',
-//   ]),
-//   new Dish('Lasagne', 'Pasta', false, [
-//     'Pasta',
-//     'Beek Mince',
-//     'Tomato',
-//     'Beschamel',
-//     'Side Salad',
-//   ]),
-//   new Dish('Potato and Cauliflower Curry', 'Rice', true, [
-//     'Rice',
-//     'Potato',
-//     'Onion',
-//     'Cauliflower',
-//     'Coconut Cream',
-//     'Augergine',
-//   ]),
-
-//   new Dish('Chilli con Carne', 'Rice', false, [
-//     'Rice',
-//     'Beef',
-//     'Tomato',
-//     'Kidney Beans',
-//     'Paprika',
-//     'Cumin',
-//   ]),
-//   new Dish('Veggie Chilli', 'Rice', false, [
-//     'Rice',
-//     'Tomato',
-//     'Kidney Beans',
-//     'Paprika',
-//     'Cumin',
-//   ]),
-//   new Dish('Teriyaki Salmon with Rice', 'Rice', false, [
-//     'Rice',
-//     'Salmon',
-//     'Green Veg',
-//   ]),
-
-//   new Dish('Beef Stroganoff', 'Rice', false, [
-//     'Rice',
-//     'Beef',
-//     'Cream',
-//     'Green Beans',
-//   ]),
-//   new Dish('Creamy Chicken with Green Beans', 'Rice', false, [
-//     'Rice',
-//     'Cream',
-//     'Chicken',
-//     'Green Beans',
-//   ]),
-//   new Dish('Coq Au Vin', 'Rice', false, [
-//     'Rice',
-//     'Chicken',
-//     'Bacon',
-//     'Cabbage',
-//     'Mushrooms',
-//     'Potatoes',
-//     'Wine',
-//   ]),
-//   new Dish('Swedish Meatballs', 'Rice', false, [
-//     'Rice',
-//     'Beef & Pork Mince',
-//     'Cream',
-//     'Dill',
-//   ]),
-//   new Dish('Beef Stir Fry', 'Rice', false, [
-//     'Rice',
-//     'Beef',
-//     'Brocolli',
-//     'Mini Corn',
-//     'Garlic',
-//     'Spring Onion',
-//   ]),
-//   new Dish('Chicken Biryani', 'Rice', false, [
-//     'Rice',
-//     'Chicken',
-//     'Spices',
-//     'Onion',
-//     'Yoghurt',
-//   ]),
-
-//   new Dish('Roast Chicken & Potatoes', 'Potato', false, [
-//     'Potato',
-//     'Whole Chicken',
-//     'Green Veg',
-//   ]),
-//   new Dish('Burger & Chips', 'Potato', false, [
-//     'Potato',
-//     'Beef Burger',
-//     'Buns',
-//     'Corn on Cob',
-//   ]),
-//   new Dish('Fish & Chips', 'Potato', false, ['Potato', 'Fish', 'Green Veg']),
-//   new Dish('Jacket Potato', 'Potato', true, ['Potato', 'Cheese', 'Salad']),
-//   new Dish('Fish Pie', 'Potato', false, ['Potato', 'Fish', 'Green Veg']),
-
-//   new Dish('One Pot Chicken with Cous Cous', 'Cous Cous', false, [
-//     'Cous Cous',
-//     'Chicken',
-//     'Peppers',
-//     'Olives',
-//     'Lemon',
-//   ]),
-//   new Dish('Lamb or Chicken Tagine', 'Cous Cous', false, [
-//     'Cous Cous',
-//     'Lamb or Chicken',
-//     'Tomato',
-//     'Onion',
-//     'Garlic',
-//   ]),
-//   new Dish('White Fish, Chorizo & White Bean Stew', 'Cous Cous', false, [
-//     'Cous Cous',
-//     'White Fish',
-//     'Chorizo',
-//     'Canellini Beans',
-//     'Tomato',
-//   ]),
-//   new Dish('Ramen Noodles', 'Noodles', false, [
-//     'Noodles',
-//     'Left over meat',
-//     'Green Veg',
-//   ]),
-
-//   new Dish('Stir Fry Chicken & Noodles', 'Noodles', false, [
-//     'Noodles',
-//     'Chicken',
-//     'Brocolli',
-//     'Mini Corn',
-//   ]),
-//   new Dish('Stir Fry Tofu & Green Veg', 'Noodles', true, [
-//     'Noodles',
-//     'Tofu',
-//     'Brocolli',
-//     'Mini Corn',
-//     'Green Beans',
-//   ]),
-//   new Dish('Chicken Quesadilla', 'Tortilla', false, [
-//     'Tortilla',
-//     'Chicken',
-//     'Cheese',
-//     'Black Beans',
-//     'Sweetcorn',
-//   ]),
-//   new Dish('Chicken Wrap', 'Tortilla', false, [
-//     'Tortilla',
-//     'Chicken',
-//     'Cheese',
-//     'Avocado',
-//     'Sour Cream',
-//     'Lettuce',
-//   ]),
-//   new Dish('Enchilada', 'Tortilla', false, [
-//     'Tortilla',
-//     'Beef or Chicken',
-//     'Tomato',
-//     'Onion',
-//     'Pepper',
-//   ]),
-
-//   new Dish('Lamb Kofte', 'Tortilla', false, [
-//     'Tortilla',
-//     'Lamb mince',
-//     'Tomato',
-//     'Avocado',
-//     'Cucumber',
-//     'Hummus',
-//   ]),
-// ;
 
 module.exports = dishes;

@@ -24,6 +24,7 @@ async function seedDishes(dishes) {
   }
 
   if (done === dishes.length) {
+    console.log('database seeded successfully');
     mongoose.disconnect();
   }
 }

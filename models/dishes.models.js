@@ -7,14 +7,14 @@ exports.selectDishes = async (vegetarian, carbType) => {
       const dishes = await Dish.find({ vegetarian, carbType });
       return dishes;
     } catch (error) {
-      return next(error);
+      return error;
     }
   } else {
     try {
       const dishes = await Dish.find({ carbType });
       return dishes;
     } catch (error) {
-      return next(error);
+      return error;
     }
   }
 };
@@ -25,7 +25,7 @@ exports.addDish = async (newDish) => {
     const result = await dishToAdd.save();
     return result;
   } catch (error) {
-    return next(error);
+    return error;
   }
 };
 
@@ -35,7 +35,7 @@ exports.removeDishById = async (id) => {
 
     return result;
   } catch (error) {
-    return next(error);
+    return error;
   }
 };
 
@@ -44,6 +44,6 @@ exports.editDishById = async (id, update) => {
     const result = await Dish.findByIdAndUpdate({ _id: id }, update);
     return result;
   } catch (error) {
-    return next(error);
+    return error;
   }
 };

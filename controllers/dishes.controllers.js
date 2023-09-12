@@ -12,7 +12,7 @@ exports.getDishes = async (req, res) => {
     const dishes = await selectDishes(vegetarian, carbType);
     res.status(200).send({ dishes });
   } catch (error) {
-    return next(error);
+    return res.status(500).send({ msg: 'Server Error' });
   }
 };
 
@@ -23,7 +23,7 @@ exports.postDish = async (req, res) => {
     const addedDish = await addDish(newDish);
     res.status(201).send({ addedDish });
   } catch (error) {
-    return next(error);
+    return res.status(500).send({ msg: 'Server Error' });
   }
 };
 
@@ -33,7 +33,7 @@ exports.deleteDishById = async (req, res) => {
     const deletedDish = await removeDishById(id);
     res.status(202).send({ deletedDish });
   } catch (error) {
-    return next(error);
+    return res.status(500).send({ msg: 'Server Error' });
   }
 };
 
@@ -44,6 +44,6 @@ exports.updateDishById = async (req, res) => {
     const updatedDish = await editDishById(id, update);
     res.status(201).send({ updatedDish });
   } catch (error) {
-    console.log(error);
+    return res.status(500).send({ msg: 'Server Error' });
   }
 };
