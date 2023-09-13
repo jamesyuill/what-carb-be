@@ -3,16 +3,25 @@ const {
   addDish,
   removeDishById,
   editDishById,
+  selectAllDishes,
 } = require('../models/dishes.models');
 
 exports.getDishes = async (req, res) => {
   const { vegetarian, carbType } = req.query;
-
-  try {
-    const dishes = await selectDishes(vegetarian, carbType);
-    res.status(200).send({ dishes });
-  } catch (error) {
-    return res.status(500).send({ msg: 'Server Error' });
+  if (vegetarian || carbType) {
+    try {
+      const dishes = await selectDishes(vegetarian, carbType);
+      res.status(200).send({ dishes });
+    } catch (error) {
+      return res.status(500).send({ msg: 'Server Error' });
+    }
+  } else {
+    try {
+      const allDishes = await selectAllDishes();
+      res.status(200).send({ allDishes });
+    } catch (error) {
+      return res.status(500).send({ msg: 'Server Error' });
+    }
   }
 };
 

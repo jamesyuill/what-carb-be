@@ -19,6 +19,15 @@ exports.selectDishes = async (vegetarian, carbType) => {
   }
 };
 
+exports.selectAllDishes = async () => {
+  try {
+    const allDishes = await Dish.find({});
+    return allDishes;
+  } catch (error) {
+    return error;
+  }
+};
+
 exports.addDish = async (newDish) => {
   try {
     const dishToAdd = new Dish(newDish);
