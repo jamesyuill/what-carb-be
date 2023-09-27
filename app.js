@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./db/connectMongo');
+const cronJob = require('./pinger/pinger');
 const app = express();
 const getRoute = require('./routes/dishes');
 const { handleCustomErrors } = require('./errorhandlers/errorHandlers');
